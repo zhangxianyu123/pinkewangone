@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*上部分*/
+.container {
+    width: 1200px;
+    height: 2559px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+.style {
+    width: 1200px;
+    height: 90px;
+    border: 1px solid black;
+    margin: auto;
+
+}
+
+.style img {
+    margin-top: 20px;
+    float: left;
+}
+
+#myUL li {
+    display: inline-block;
+    width: 85px;
+    height: 90px;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+}
+
+#myUL li:hover {
+    background-color: red;
+    border-bottom: 10px solid black;
+}
+
+#myUL li a {
+    display: inline-block;
+    margin-top: 50px;
+    font-size: 20px;
+
+}
+
+.navbar-icon {
+    width: 200px;
+    height: 90px;
+    border: 1px solid white;
+}
+.login-btn {
+    border: 1px solid rgb(77,171,80);
+    width: 126px;
+    height: 46px;
+    border-radius: 20px;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+/*点击登录*/
+.login-btn:hover{
+   background-color: #78bc85;
+   transition:all 0.5s;
+    cursor: pointer;
+}
+.middle{
+    width: 960px;
+    height: 480px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 36px;
+}
+
