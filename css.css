@@ -3,18 +3,32 @@
     margin: 0;
 }
 
+body {
+    background-color: rgb(250, 250, 250);
+}
+
 /*上部分*/
 .container {
     width: 1200px;
     height: 2559px;
     border: 1px solid black;
     margin: auto;
+    z-index: 7;
+}
+
+#bigDiv {
+    width: 100%;
+    height: 93px;
+    border: 1px solid black;
+    position: fixed;
+    z-index: 10;
+    background-color: white;
 }
 
 .style {
     width: 1200px;
     height: 90px;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     margin: auto;
 
 }
@@ -34,8 +48,8 @@
 }
 
 #myUL li:hover {
-    background-color: red;
-    border-bottom: 10px solid black;
+    background-color: lightgray;
+    border-bottom: 4px solid black;
 }
 
 #myUL li a {
@@ -50,25 +64,399 @@
     height: 90px;
     border: 1px solid white;
 }
+
 .login-btn {
-    border: 1px solid rgb(77,171,80);
+    border: 1px solid rgb(77, 171, 80);
     width: 126px;
     height: 46px;
     border-radius: 20px;
     margin-left: 70px;
     margin-top: 20px;
 }
+
 /*点击登录*/
-.login-btn:hover{
-   background-color: #78bc85;
-   transition:all 0.5s;
+.login-btn:hover {
+    background-color: #78bc85;
+    transition: all 0.5s;
     cursor: pointer;
 }
-.middle{
+
+.middle {
     width: 960px;
     height: 480px;
-    border: 1px solid black;
+    border: 1px solid white;
     margin: auto;
-    margin-top: 36px;
+    margin-top: 130px;
 }
+
+/*中间图片放大*/
+.Divone {
+    width: 480px;
+    height: 480px;
+    float: left;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.Divone:hover .showone {
+    width: 480px;
+    height: 100px;
+    background-color: black;
+    opacity: 0.4;
+    bottom: 0;
+    position: absolute;
+    display: block;
+
+}
+
+.Divone:hover p {
+    position: absolute;
+    bottom: 30px;
+    display: block;
+    color: white;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.Divone img:hover {
+    transform: scale(1.2);
+    transition: all 1s;
+
+}
+
+.Divtwo {
+    width: 237px;
+    height: 237px;
+    border: 1px solid black;
+    float: left;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+.Divtwo img:hover {
+    transform: scale(1.2);
+    transition: all 1s
+}
+
+.Divthere {
+    width: 237px;
+    height: 237px;
+    border: 1px solid black;
+    float: left;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+.Divthere img:hover {
+    transform: scale(1.2);
+    transition: all 1s
+}
+
+.Divfour {
+    width: 237px;
+    height: 237px;
+    border: 1px solid black;
+    float: left;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+.Divfour img:hover {
+    transform: scale(1.2);
+    transition: all 1s
+}
+
+.four {
+    width: 237px;
+    height: 237px;
+    border: 1px solid black;
+    float: left;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.four img:hover {
+    transform: scale(1.2);
+    transition: all 1s
+}
+
+/*主体第2部分*/
+
+/*主体第2部分*/
+.article-list-group {
+    width: 960px;
+    height: 820px;
+    margin-top: 482px;
+}
+
+.title-cpt {
+    width: 960px;
+    height: 132px;
+
+}
+
+.title-cpt img {
+    margin-top: 50px;
+
+}
+
+.title-cpt span {
+    display: inline-block;
+    margin-top: 46px;
+}
+
+/*主体第2部分3个div*/
+.article-cpt {
+    width: 960px;
+    height: 218px;
+    border: 1px solid lightgray;
+    margin-top: 9px;
+}
+
+.article-imgthere {
+    width: 296px;
+    height: 216px;
+    border: 1px solid black;
+    float: left;
+    background-image: url("http://hpimg.pianke.me/47f879d4128bb2b0922861a77e8f598d20170426.jpg?imageView2/2/w/640/format/jpg");
+    background-size: 100% 100%;
+}
+
+.article-info {
+    width: 660px;
+    height: 216px;
+    border: 1px solid lightgray;
+    float: left;
+}
+
+.article-img {
+    width: 296px;
+    height: 216px;
+    border: 1px solid black;
+    float: left;
+    background-image: url("http://hpimg.pianke.me/b963239b505140283a6cd87275ecbb8520170720.gif");
+    background-size: 100% 100%;
+}
+
+.article-imgtwo {
+    width: 296px;
+    height: 216px;
+    border: 1px solid black;
+    float: left;
+    background-image: url("http://hpimg.pianke.me/37563e4b91cdb37d6784d234454d8f5020170619.jpg?imageView2/2/w/640/format/jpg");
+    background-size: 100% 100%;
+}
+
+.article-title {
+    width: 580px;
+    height: 36px;
+    margin-left: 20px;
+}
+
+.article-author {
+    margin-left: 20px;
+}
+
+.article-title a {
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.article-title a:hover {
+    color: #78bc85;
+}
+
+.article-author a {
+    text-decoration: none;
+    font-size: 10px;
+
+}
+
+.article-author a:hover {
+    color: #78bc85;
+}
+
+.article-content {
+    width: 505px;
+    height: 110px;
+    margin-left: 20px;
+}
+
+.article-content span {
+    font-size: 12px;
+}
+
+.article-others {
+    width: 640px;
+    height: 17px;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.article-others p {
+    font-size: 10px;
+}
+
+/*中间TING*/
+.title-cpt1 {
+    width: 960px;
+    height: 137px;
+    /*border: 1px solid black;*/
+
+}
+
+/*中间部分3个div并列*/
+.user-list-group {
+    width: 960px;
+    height: 552px;
+    /*border: 1px solid black;*/
+}
+
+.title {
+    width: 300px;
+    height: 100px;
+    /*border: 1px solid black;*/
+    position: absolute;
+    bottom: 0px;
+}
+
+.ting-cpt3 {
+    width: 300px;
+    height: 420px;
+    border: 1px solid lightgray;
+    float: left;
+    background-image: url("http://pkimg.image.alimmdn.com/upload/20161205/f169fd0ded5b36a436f2e2e056918b74.JPG@640w_85Q.jpg");
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.ting-img {
+    width: 300px;
+    height: 420px;
+    border: 1px solid lightgray;
+    float: left;
+    margin-left: 25px;
+    background-image: url("http://hpimg.pianke.me/4d9e561e043294a3e770539fd5af5a2620170419.jpg?imageView2/2/w/640/format/jpg");
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.titletwo {
+    width: 300px;
+    height: 100px;
+    /*border: 1px solid black;*/
+    position: absolute;
+    bottom: 0px;
+}
+
+.titlethree {
+    width: 300px;
+    height: 100px;
+    /*border: 1px solid black;*/
+    position: absolute;
+    bottom: 0px;
+}
+
+.ting-info {
+    width: 300px;
+    height: 420px;
+    border: 1px solid lightgray;
+    float: left;
+    margin-left: 25px;
+    background-image: url("http://pkimg.image.alimmdn.com/upload/20160530/5cbd8d90f1191dccca8882e21f31dcd7.GIF");
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/*<!--人气片客-->*/
+.user-listone {
+    width: 973px;
+    margin: auto;
+}
+
+.user-cpt {
+    width: 230px;
+    height: 235px;
+    border: 1px solid lightgray;
+    float: left;
+    margin-left: 7px;
+}
+
+.Ray {
+    width: 90px;
+    height: 80px;
+    /*border: 1px solid black;*/
+    float: left;
+    margin-top: 40px;
+}
+
+.Ray_a {
+    text-decoration: none;
+    color: black;
+}
+
+.Ray_a:hover {
+    color: #78bc85;
+}
+
+/*查看更多内容*/
+.more-botton {
+    width: 190px;
+    height: 60px;
+    margin-top: 350px;
+    margin-left: 390px;
+
+}
+
+.btn-more {
+    width: 180px;
+    height: 45px;
+    border: 1px solid lightgreen;
+    border-radius: 20px;
+}
+
+.btn-more_min {
+    width: 170px;
+    height: 38px;
+    margin-top: 3px;
+    margin-left: 5px;
+    background-color: #78bc85;
+    border-radius: 20px;
+}
+
+.btn-more_min:hover {
+    width: 170px;
+    height: 38px;
+    margin-top: 3px;
+    margin-left: 5px;
+    background-color: green;
+    opacity: 0.8;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-more_min p {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    line-height: 38px
+}
+
+/*整体底部div*/
+.bottom_div {
+    width: 100%;
+    height: 118px;
+    background-image: url("img/dibu.png");
+}
+
+
 
